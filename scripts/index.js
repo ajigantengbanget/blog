@@ -15,3 +15,17 @@ function menu() {
       document.body.classList.remove("no-scroll");
     }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const paragraphs = document.querySelectorAll(".post-description");
+
+  paragraphs.forEach(paragraph => {
+      const words = paragraph.textContent.split(' ');
+
+      if (words.length > 15) {
+          const limitedText = words.slice(0, 15).join(' ') + '...';
+          paragraph.textContent = limitedText;
+      }
+  });
+});
+

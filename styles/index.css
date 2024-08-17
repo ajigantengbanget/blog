@@ -6,8 +6,8 @@
 
 :root {
     --primary-color: #F7F7F8;
-    --secondary-color: #4E31AA;
-    --accentOne-color: #3A1078;
+    --secondary-color: #3A1078;
+    --accentOne-color: #4E31AA;
     --accentTwo-color: #3795BD;
 }
 
@@ -19,6 +19,16 @@
 @font-face {
     font-family: 'Poppins-Bold';
     src: url('/assets/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url('/assets/fonts/Poppins-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('/assets/fonts/Poppins-Medium.ttf') format('truetype');
 }
 
 body{
@@ -126,70 +136,7 @@ main{
     width: 100%;
 }
 
-.hero-section{
-    height: 680px;
-    background-color: var(--secondary-color);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
-
-.hero-section > h1{
-    font-size: 2.2em;
-    max-width: 829px;
-    font-family: 'Poppins-Bold';
-    text-align: center;
-    color: var(--primary-color);
-}
-
-.hero-section > p{
-    font-size: 1em;
-    max-width: 686px;
-    font-family: 'Poppins-Regular';
-    text-align: center;
-    color: var(--primary-color);
-}
-
-.subscribe{
-    position: relative;
-}
-
-.subscribe > input{
-    width: 512px;
-    height: 50px;
-    border-radius: 5px;
-    border: none;
-    padding: 1rem;
-    font-family: 'Poppins-Regular';
-    background-color: var(--accentOne-color);
-    color: var(--primary-color);
-    cursor: pointer;
-}
-
-.subscribe > input:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-.subscribe > button {
-    width: 122px;
-    height: 40px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 5px;
-    border-radius: 5px;
-    border: none;
-    background-color: var(--accentTwo-color);
-    color: var(--primary-color);
-    font-family: 'Poppins-Regular';
-    cursor: pointer;
-}
-
-@media screen and (max-width:576px) {
+@media screen and (max-width:786px) {
 
     nav{
         padding:1rem;
@@ -209,6 +156,12 @@ main{
 
     .navMobile{
         display: flex;
+    }
+}
+
+@media screen and (min-width:786px) and (max-width:1370px){
+    nav{
+        padding: 1rem;
     }
 }
 

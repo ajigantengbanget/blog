@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontenddev - Berita Terkini, Tren Terbaru, dan Praktik Terbaik Frontend</title>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/blogpost.css">
     <script src="scripts/index.js" defer></script>
 </head>
 <body>
@@ -16,10 +18,10 @@
             <ul>
                 <li>Beranda</li>
                 <li>Berita</li>
-                <li>Trend</li>
-                <li>Praktik Terbaik</li>
+                <li>Review</li>
+                <li>Studi Kasus</li>
+                <li>Opini dan Trend</li>
             </ul>
-            <button>Get started</button>
             <div class="menu" onclick="menu()">
                 <span></span>
                 <span></span>
@@ -29,21 +31,54 @@
                 <ul>
                     <li>Beranda</li>
                     <li>Berita</li>
-                    <li>Trend</li>
-                    <li>Praktik Terbaik</li>
+                    <li>Review</li>
+                    <li>Studi Kasus</li>
+                    <li>Opini dan Trend</li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <div class="hero-section">
-            <h1>Di Depan Kode: Berita Terkini, Tren Terbaru, dan Praktik Terbaik Frontend</h1>
-            <p>Jelajahi berita terbaru, tren terkini, dan praktik terbaik dalam frontend development. Blog ini menyediakan informasi terbaru dan tips berharga untuk membantu Anda tetap terdepan dalam dunia Frontend</p>
+        <section class="hero-section">
+            <h1>Mulai Perjalanan Frontend Anda</h1>
+            <p>Temukan semua yang Anda butuhkan di satu tempat, dari berita terbaru hingga analisis mendalam tentang dunia frontend development.</p>
             <div class="subscribe">
                 <input type="email" value="Masukan email kamu" id="emailInput">
                 <button>Subscribe</button>
             </div>
-        </div>
+        </section>
+        <section class="blog-post">
+            <div class="container">
+                <article>
+                    <img src="/assets/images/img-articles/react-18-fitur-baru-yang-akan-mengubah-cara-kita-membangun-ui.png" alt="React 18_ Fitur Baru yang Akan Mengubah Cara Kita Membangun UI">
+                    <p>Akamandanu - 17 Agustus 2024</p>
+                    <h2>React 18 : Fitur Baru yang Akan Mengubah Cara Kita Membangun UI</h2>
+                    <p class="post-description">React 18 hadir dengan serangkaian fitur baru yang menjanjikan untuk meningkatkan efisiensi dan kinerja aplikasi. Artikel ini mengulas setiap fitur dan dampaknya pada cara kita membangun user interface.</p>
+                    <button class="btn-category">Berita</button>
+                </article>
+                <article>
+                    <img src="/assets/images/img-articles/tailwind-css-vs-bootstrap-mana-yang-lebih-efisien-untuk-proyek-anda.png" alt="Tailwind CSS vs. Bootstrap: Mana yang Lebih Efisien untuk Proyek Anda?">
+                    <p>Akamandanu - 16 Agustus 2024</p>
+                    <h2>Tailwind CSS vs Bootstrap: Mana yang Lebih Efisien untuk Proyek Anda?</h2>
+                    <p class="post-description">Di artikel ini, kami membandingkan dua framework CSS populer, Tailwind dan Bootstrap, berdasarkan kinerja, kemudahan penggunaan, dan fleksibilitas untuk membantu Anda memilih yang terbaik untuk proyek Anda.</p>
+                    <button class="btn-category">Review</button>
+                </article>
+                <article>
+                    <img src="/assets/images/img-articles/mengurangi-waktu-muat-halaman-dengan-teknik-lazy-loading.png" alt="Mengurangi Waktu Muat Halaman dengan Teknik Lazy Loading">
+                    <p>Akamandanu - 15 Agustus 2024</p>
+                    <h2>Mengurangi Waktu Muat Halaman dengan Teknik Lazy Loading</h2>
+                    <p class="post-description">Studi kasus ini mengeksplorasi bagaimana penerapan teknik lazy loading berhasil mengurangi waktu muat halaman pada proyek web tertentu, lengkap dengan tantangan yang dihadapi dan solusi yang diterapkan.</p>
+                    <button class="btn-category">Studi Kasus</button>
+                </article>
+                <article>
+                    <img src="/assets/images/img-articles/mengapa-javaScript-terus-menjadi-bahasa-pilihan-di-dunia-frontend.png" alt="React 18_ Fitur Baru yang Akan Mengubah Cara Kita Membangun UI">
+                    <p>Akamandanu - 14 Agustus 2024</p>
+                    <h2>Mengapa JavaScript Terus Menjadi Bahasa Pilihan di Dunia Frontend?</h2>
+                    <p class="post-description">JavaScript telah lama menjadi tulang punggung pengembangan frontend. Artikel ini membahas mengapa bahasa ini tetap relevan, serta tren dan inovasi terbaru yang memperkuat posisinya di industri.</p>
+                    <button class="btn-category">Opini dan Trend</button>
+                </article>
+            </div>
+        </section>
     </main>
 </body>
 </html>
